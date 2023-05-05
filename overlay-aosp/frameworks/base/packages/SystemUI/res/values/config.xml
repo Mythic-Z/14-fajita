@@ -22,5 +22,4 @@
 <resources>
     <!-- Color of the UDFPS Pressed view -->
     <color name="config_udfpsColor">#00ff00</color>
-
 </resources>
