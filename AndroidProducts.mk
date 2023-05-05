@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_fajita.mk
+    $(LOCAL_DIR)/derp_fajita.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_fajita-user \
-    lineage_fajita-userdebug \
-    lineage_fajita-eng
+    derp_fajita-user \
+    derp_fajita-userdebug \
+    derp_fajita-eng
