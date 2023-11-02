@@ -21,10 +21,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from fajita device
 $(call inherit-product, device/oneplus/fajita/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Tequila stuff.
+$(call inherit-product, vendor/tequila/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_fajita
+TEQUILA_BUILD_TYPE := Envoy-ZLab
+TEQUILA_MAINTAINER := Ꮛnѵoყ-Z
+
+PRODUCT_NAME := tequila_fajita
 PRODUCT_DEVICE := fajita
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
