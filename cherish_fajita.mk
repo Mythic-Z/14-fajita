@@ -21,10 +21,23 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from fajita device
 $(call inherit-product, device/oneplus/fajita/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Cherish stuff.
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_fajita
+# CherishOS
+CHERISH_BUILD_TYPE=Envoy-ZLab
+TARGET_USES_MINI_GAPPS := true
+USE_PIXEL_CHARGING := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_HAS_UDFPS := true
+TARGET_INCLUDE_CARRIER_SETTINGS := true
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.cherish.maintainer=Ꮛnѵoყ-Z
+
+# Boot Animation
+TARGET_BOOT_ANIMATION_RES := 720
+
+PRODUCT_NAME := cherish_fajita
 PRODUCT_DEVICE := fajita
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
