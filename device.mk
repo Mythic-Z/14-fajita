@@ -45,6 +45,10 @@ PRODUCT_PACKAGES += \
 
 TARGET_HAS_UDFPS := true
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
+
 # Inherit from oneplus sdm845-common
 $(call inherit-product, device/oneplus/sdm845-common/common.mk)
 
