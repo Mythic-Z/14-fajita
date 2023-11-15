@@ -24,7 +24,7 @@ $(call inherit-product, device/oneplus/fajita/device.mk)
 # Inherit some common Voltage stuff.
 $(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 
-VOLTAGE_BUILD_TYPE := ZaidBuilds
+VOLTAGE_BUILD_TYPE := Envoy-Z-Lab
 
 PRODUCT_NAME := voltage_fajita
 PRODUCT_DEVICE := fajita
